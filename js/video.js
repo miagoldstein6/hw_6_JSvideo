@@ -60,7 +60,7 @@ volumeSlider.addEventListener("input", function(){
 	video.volume = volumeSlider.value / 100;
 
 	var volumeDisplay = document.querySelector("#volume");
-	volumeDisplay.textContent = volumeSlider.value + "%";
+	volumeDisplay.innerHTML = volumeSlider.value + "%";
 
 	console.log("volume set to: " + volumeSlider.value + "%");
 })
